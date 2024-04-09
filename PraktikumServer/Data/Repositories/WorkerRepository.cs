@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Library;
 using Library.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
+using Solid.Core.Entities;
 
 namespace Solid.Data.Repositories
 {
@@ -46,7 +48,28 @@ namespace Solid.Data.Repositories
                 m.BirthDate = value.BirthDate;
                 m.Gender = value.Gender;
                 m.Identity = value.Identity;
-                m.Roles = value.Roles;
+                //m.Roles = value.Roles;
+            }
+            // יצירת מילון של אובייקטים עם שם כמפתח והמופע האחרון כערך
+            var objectsDictionary = new Dictionary<string, Role>();
+            foreach (var obj in value.Roles)
+            {
+                // אם המפתח כבר קיים, מחליפים את הערך הקיים באובייקט החדש
+                if (objectsDictionary.ContainsKey(obj.Name.Name))
+                {
+                    objectsDictionary[obj.Name.Name] = obj;
+                }
+                else
+                {
+                    objectsDictionary.Add(obj.Name.Name, obj);
+                }
+            }
+            m.Roles = new List<Role>(); //objectsDictionary.Values?.ToList();
+            // הדפסת המילון
+            foreach (var item in objectsDictionary)
+            {
+                //Console.WriteLine($"שם: {item.Value.שם}, תאריך: {item.Value.תאריך}");
+                m.Roles.Add(item.Value);
             }
             await _context.SaveChangesAsync();
             return m;
