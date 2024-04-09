@@ -1,0 +1,32 @@
+.worker-table-container {
+    margin: 20px;
+  }
+  
+  .table-heading {
+    color: #333;
+  }
+  
+  .worker-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .worker-table th, .worker-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .worker-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .worker-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .worker-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  

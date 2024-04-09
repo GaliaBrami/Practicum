@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TtwA7jycHp11z1JmlfYzZdYx2k7hvKljIFQSXP+NnZY=",
+  "Source": "WorkerServer",
+  "BasePath": "_content/WorkerServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

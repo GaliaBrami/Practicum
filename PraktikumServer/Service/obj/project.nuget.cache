@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "nripwr5WPXCzL1cA4FYnV0lU+4nob3RDaFLjzJkmJOGiDwpnYmjPPdjG6Q2sYKIMszHVQ9ny0v+r2aXkzOm+eg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Service\\Solid.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\יונתן\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\יונתן\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\יונתן\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\יונתן\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\יונתן\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

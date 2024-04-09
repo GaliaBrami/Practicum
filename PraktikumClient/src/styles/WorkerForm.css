@@ -1,0 +1,53 @@
+.worker-form-container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-heading {
+    margin-top: 0;
+  }
+  
+  .form-row {
+    margin-bottom: 10px;
+  }
+  
+  .form-row label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-row input,
+  .form-row select {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-buttons {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .save-button,
+  .cancel-button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    color: #333;
+  }
+  
