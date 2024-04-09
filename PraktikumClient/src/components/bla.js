@@ -13,7 +13,7 @@ const schema = yup
   .object({
     firstName: yup.string().required().min(2),
     lastName: yup.string().required().min(2),
-    identity: yup.string().required().min(9).max(9, "id has 9 digits!"),
+    identity: yup.string().required().min(9).max(9,"id has 9 digits!"),
     startDate: yup.date().required().min(yup.ref('birthDate')),
     birthDate: yup.date().required(),
     gender: yup.number().required(),
@@ -36,8 +36,7 @@ const schema = yup
 const WorkerForm = () => {
   const workerRedux = useSelector(x => x.worker)
   const [worker, setWorker] = useState(null);
-  const [roles, setRoles] = useState([]);//all the existing roles
-  const [prevRoles, setPRoles] = useState([]);
+  const [roles, setRoles] = useState([]);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -56,23 +55,25 @@ const WorkerForm = () => {
       startDate: workerRedux?.startDate?.split('T')[0],
       gender: workerRedux?.gender,
       roles: workerRedux?.roles ? workerRedux.roles.map(role => ({
-        id: role.id,
-        name: { id: role.name.id, name: roles.find(r => r.id == role.name.id)?.name },
+        id:role.id,
+        name: { id: role.name.id , name: roles.find(r=>r.id==role.name.id)?.name },
         isManager: role.isManager,
         startDate: role.startDate?.split('T')[0],
       })) : []
     },
   })
-
   useEffect(() => {
 
     axios.get("https://localhost:7259/api/Roles")
       .then(info => {
         console.log(info.data, "daratatrtra")
         setRoles(info.data);
+
       })
+      
       .catch(err => console.log(err));
-    console.log(workerRedux)
+      
+      console.log(workerRedux)
   }, []);
 
   const cancle = () => {
@@ -82,12 +83,11 @@ const WorkerForm = () => {
   const onSubmit1 = (data) => {
     console.log(data)
     if (data.roles)
-      data.roles.map(r => { r.id = 0; r.name.id = 0 });//roles.find(r1=>r1.name==r.name.name)?.id 
+    data.roles.map(r => { r.id = 0; r.name.id = 0});//roles.find(r1=>r1.name==r.name.name)?.id 
     // data.status = true;
     // data.id = 0;
     console.log(data)
     if (workerRedux) {
-
       // data.startDate=new Date(data.startDate).toISOString();
       // data.birthDate=new Date(data.birthDate).toISOString();
       axios.put(`https://localhost:7259/api/Worker/${workerRedux.id}`, data)
@@ -113,12 +113,10 @@ const WorkerForm = () => {
     name: "roles",
   });
 
-
   return (<>
-    <button onClick={() => {
-      dispatch({ type: action.SET_WORKER, worker: null });
-      navigate("/addRole")
-    }}> Add Role</button>
+  <button onClick={() => {
+          dispatch({ type: action.SET_WORKER, worker: null });
+          navigate("/addRole")}}> Add Role</button>
 
     <div className="worker-form-container">
       <h2 className="form-heading">{workerRedux ? 'Edit Worker' : 'Add Worker'}</h2>
@@ -153,67 +151,15 @@ const WorkerForm = () => {
           </select> <hr></hr>
         </div>
         <div className="form-row">
-          {/* {fieldsRoles.map((field, index) => (
-            <div className="ui grid" key={index}>
-              <label>Role Name:</label>
-              <div className="four wide column">
-                <select
-                  name={`roles[${index}].name.name`}
-                  defaultValue={field.name}
-                  ref={register()}
-                  {...register(`roles[${index}].name.name`)}
-                >
-                  <option value="">Select Role Name</option>
-                  {roles.map((r, innerIndex) => (
-                    <option key={r.id} value={r.name}>
-                      {r.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="four wide column">
-                <label htmlFor={`isManager-${index}`}>Manager</label>
-                <input
-                  type="checkbox"
-                  id={`isManager-${index}`}
-                  name={`roles.${index}.isManager`}
-                  {...register(`roles.${index}.isManager`)}
-                  value="true"
-                />
-                <input type="hidden" value="false" {...register(`roles.${index}.isManager`)} />
-                <p>{errors.roles?.[index]?.isManager?.message}</p>
-              </div>
-              <div className="four wide column">
-                <label>Start Working Date:</label>
-                <input
-                  {...register(`roles.${index}.startDate`)}
-                  placeholder="startDate"
-                  type="date"
-                />
-                <p>{errors.roles?.[index]?.c?.message}</p>
-              </div>
-              <div className="four wide column">
-                <button
-                  type="button"
-                  className="ui button"
-                  onClick={() => remove(index)}
-                >
-                  Delete
-                </button>
-              </div>
-              <hr />
-            </div>
-          ))} */}
 
           {fieldsRoles.map((field, index) => (
             <div className="ui grid">
               <label>Role Name:</label>
               <div className="four wide column">
-                <select  name={`roles[${index}].name.name`}
-        defaultValue={field.name}
-        ref={register()} {...register(`roles[${index}].name.name`)} >
+                <select name="roleName" {...register(`roles[${index}].name.name`)} >
                   <option value="">Select Role Name</option>
                   {roles.map((r, index) => (
+                    // console.log("Role ID:", r.id, "Role Name:", r.name);
                     <option key={r.id} value={r.name}>{r.name}</option>
 ))}
 
@@ -224,18 +170,33 @@ const WorkerForm = () => {
                         <input type='checkbox' id="cM" name='cM' {...register(`roles.${index}.isManager`)} value="true" />
                         <p>{errors.roles?.[index]?.a?.message}</p>
                     </div>
-              
+              {/* <div className="four wide column">
+                <label htmlFor={`isManager-${index}`}>Manager</label>
+                <input
+                  type="checkbox"
+                  id={`isManager-${index}`}
+                  name={`roles.${index}.isManager`}
+                  {...register(`roles.${index}.isManager`)}
+                  value="true"
+                />
+                <input
+                  type="hidden"
+                  value="false"
+                  {...register(`roles.${index}.isManager`)}
+                />
+                <p>{errors.roles?.[index]?.isManager?.message}</p>
+              </div> */}
               <div className="four wide column">
                 <label>Start Working Date:</label>
                 <input {...register(`roles.${index}.startDate`)} placeholder="startDate" type='date' />
                 <p>{errors.roles?.[index]?.c?.message}</p>
 
               </div><div className="four wide column">
-              <button type='button' className="ui button" onClick={() => remove(index)}> delete</button>
+                <button type='button' className="ui button" onClick={() => remove(index)}> delete</button>
               </div><hr />
             </div>
           ))}
-          <button type="button" class="ui button" onClick={()=>{append({id:0,name:{id:0,name:""},isManager:false,startDate:""})}}> add Role</button><br /><br />
+          <button type="button" class="ui button" onClick={() => append({})}> add Role</button><br /><br />
         </div><br></br>
         <div className="form-buttons">
           <input className="save-button ui button" type="submit" value="Save"></input>

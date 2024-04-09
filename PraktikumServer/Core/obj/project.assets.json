@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj",
+      "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj",
       "projectName": "Solid.Core",
-      "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj",
+      "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj",
       "packagesPath": "C:\\Users\\יונתן\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\obj\\",
+      "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

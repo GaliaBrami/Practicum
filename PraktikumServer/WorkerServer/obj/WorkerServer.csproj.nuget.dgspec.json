@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\WorkerServer\\WorkerServer.csproj": {}
+    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\WorkerServer\\WorkerServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj": {
+    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj",
+        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj",
         "projectName": "Solid.Core",
-        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj",
+        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj",
         "packagesPath": "C:\\Users\\יונתן\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\obj\\",
+        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Data\\solid.Data.csproj": {
+    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Data\\solid.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Data\\solid.Data.csproj",
+        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Data\\solid.Data.csproj",
         "projectName": "solid.Data",
-        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Data\\solid.Data.csproj",
+        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Data\\solid.Data.csproj",
         "packagesPath": "C:\\Users\\יונתן\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Data\\obj\\",
+        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj": {
-                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj"
+              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj": {
+                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Service\\Solid.Service.csproj": {
+    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Service\\Solid.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Service\\Solid.Service.csproj",
+        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Service\\Solid.Service.csproj",
         "projectName": "Solid.Service",
-        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Service\\Solid.Service.csproj",
+        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Service\\Solid.Service.csproj",
         "packagesPath": "C:\\Users\\יונתן\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Service\\obj\\",
+        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -172,8 +172,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj": {
-                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj"
+              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj": {
+                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj"
               }
             }
           }
@@ -207,14 +207,14 @@
         }
       }
     },
-    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\WorkerServer\\WorkerServer.csproj": {
+    "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\WorkerServer\\WorkerServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\WorkerServer\\WorkerServer.csproj",
+        "projectUniqueName": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\WorkerServer\\WorkerServer.csproj",
         "projectName": "WorkerServer",
-        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\WorkerServer\\WorkerServer.csproj",
+        "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\WorkerServer\\WorkerServer.csproj",
         "packagesPath": "C:\\Users\\יונתן\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\WorkerServer\\obj\\",
+        "outputPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\WorkerServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -235,14 +235,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj": {
-                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Core\\Solid.Core.csproj"
+              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj": {
+                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Core\\Solid.Core.csproj"
               },
-              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Data\\solid.Data.csproj": {
-                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Data\\solid.Data.csproj"
+              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Data\\solid.Data.csproj": {
+                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Data\\solid.Data.csproj"
               },
-              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Service\\Solid.Service.csproj": {
-                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\server\\WorkerServer\\Service\\Solid.Service.csproj"
+              "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Service\\Solid.Service.csproj": {
+                "projectPath": "C:\\Users\\יונתן\\OneDrive\\מסמכים\\גליה\\יג תכנות\\פרקטיקום\\Practicum\\PraktikumServer\\Service\\Solid.Service.csproj"
               }
             }
           }

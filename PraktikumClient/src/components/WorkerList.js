@@ -79,13 +79,13 @@ useEffect(() => {
         setRoles(info.data);
         if(info.data.length==0)
           navigator("/addRole")
-        const uniqueRoles=[];
-        roles.forEach(role => {
-          if (!uniqueRoles.some(r => r.name === role.name)) {
-              uniqueRoles.push(role);
-          }
-          setRoles(uniqueRoles)
-      });
+        // const uniqueRoles=[];
+        // roles.forEach(role => {
+        //   if (!uniqueRoles.some(r => r.name === role.name)) {
+        //       uniqueRoles.push(role);
+        //   }
+        //   setRoles(uniqueRoles)
+      // });
       })
       .catch(err => console.log(err));
  

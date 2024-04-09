@@ -79,6 +79,7 @@ namespace Library.Controllers
                 LastName = workerPostModel.LastName,
                 Identity = workerPostModel.Identity,
                 BirthDate = workerPostModel.BirthDate,
+                StartDate = workerPostModel.StartDate,
                 Gender = workerPostModel.Gender
             };
 
@@ -101,13 +102,39 @@ namespace Library.Controllers
 
         // PUT api/<MembersController>/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] WorkerPostModel member)
+        public async Task<ActionResult> Put(int id, [FromBody] WorkerPostModel workerPostModel)
         {
-            var memberToUpdate = _mapper.Map<Worker>(member);
-            var newMember = await _workerService.PutAsync(id, memberToUpdate);
-            if (newMember == null)
+            var existingRoleNames1 = _roleNameRepository.GetRolesAsync();
+            var existingRoleNames = existingRoleNames1;
+
+            //var memberToUpdate = _mapper.Map<Worker>(workerPostModel);
+            var worker = new Worker
+            {
+                FirstName = workerPostModel.FirstName,
+                LastName = workerPostModel.LastName,
+                Identity = workerPostModel.Identity,
+                BirthDate = workerPostModel.BirthDate,
+                StartDate = workerPostModel.StartDate,
+                Gender = workerPostModel.Gender
+            };
+
+            foreach (var roleNameDto in workerPostModel.Roles)
+            {
+                // Check if the roleNameDto.Name exists in the existingRoleNames list
+                var existingRoleName = existingRoleNames.Result.FirstOrDefault(r => r.Name == roleNameDto.Name.Name);
+
+
+                // If the RoleName already exists, associate it with the worker
+                worker.Roles.Add(new Role { Name = existingRoleName, IsManager = roleNameDto.IsManager, StartDate = roleNameDto.StartDate });
+
+
+            }
+
+
+            var newW = await _workerService.PutAsync(id, worker);
+            if (newW == null)
                 return NotFound();
-            return Ok(newMember);
+            return Ok(newW);
 
         }
         [HttpPut("status/{id}")]
